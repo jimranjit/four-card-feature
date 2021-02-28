@@ -106,28 +106,28 @@ section p {
 
 .supervisor {
   grid-area: supervisor;
-  border-top: 5px solid var(--cyan);
+  border-top: 3px solid var(--cyan);
 }
 
 /* TEAM BUILDER SECTION CSS */
 
 .team-builder {
   grid-area: team-builder;
-  border-top: 5px solid var(--red);
+  border-top: 3px solid var(--red);
 }
 
 /* KARMA SECTION CSS */
 
 .karma {
   grid-area: karma;
-  border-top: 5px solid var(--orange);
+  border-top: 3px solid var(--orange);
 }
 
 /* CALCULATOR SECTION CSS */
 
 .calculator {
   grid-area: calculator;
-  border-top: 5px solid var(--blue);
+  border-top: 3px solid var(--blue);
 }
 
 /* ATTRIBUTION CSS */
@@ -175,6 +175,7 @@ section p {
     gap: 0;
     width: 80%;
     margin: 0 auto;
+    max-height: 100vh;
   }
 
   /* GENERAL SECTION CSS */
