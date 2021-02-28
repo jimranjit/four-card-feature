@@ -41,6 +41,8 @@ p {
   font-size: 0.8em;
 }
 
+/* MAIN CONTAINER CSS */
+
 .main {
   margin: 5rem 0;
 }
@@ -57,6 +59,8 @@ p {
     'calculator';
   gap: 2em;
 }
+
+/* GENERAL SECTION CSS */
 
 section {
   background-color: #fff;
@@ -76,6 +80,7 @@ section p {
   padding: 0.5rem 0 2rem 0;
 }
 
+/* INTRO SECTION CSS */
 .intro {
   padding: 2em;
   border: none;
@@ -97,22 +102,83 @@ section p {
   color: var(--gray-blue);
 }
 
+/* SUPERVISOR SECTION CSS */
+
 .supervisor {
   grid-area: supervisor;
   border-top: 5px solid var(--cyan);
 }
+
+/* TEAM BUILDER SECTION CSS */
 
 .team-builder {
   grid-area: team-builder;
   border-top: 5px solid var(--red);
 }
 
+/* KARMA SECTION CSS */
+
 .karma {
   grid-area: karma;
   border-top: 5px solid var(--orange);
 }
 
+/* CALCULATOR SECTION CSS */
+
 .calculator {
   grid-area: calculator;
   border-top: 5px solid var(--blue);
+}
+
+/* ATTRIBUTION CSS */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 800px) {
+  /* MAIN CONTAINER CSS */
+  .main {
+    margin: 2rem 0;
+  }
+
+  /* INTO SECTION CSS */
+  .intro {
+    width: 40%;
+    margin: 0 auto;
+  }
+
+  .intro h2 {
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .intro p {
+    padding: 1em 0;
+  }
+
+  /* GRID-CONTAINER CSS */
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      '. team-builder .'
+      'supervisor team-builder calculator'
+      'supervisor karma calculator'
+      '. karma .';
+    gap: 0;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* GENERAL SECTION CSS */
+  section {
+    margin: 1em;
+  }
 }
