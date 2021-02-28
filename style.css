@@ -98,8 +98,8 @@ section p {
 }
 
 .intro h2 span {
-  font-weight: 400;
-  color: var(--gray-blue);
+  font-weight: 200;
+  color: var(--darl-blue);
 }
 
 /* SUPERVISOR SECTION CSS */
@@ -145,7 +145,7 @@ section p {
 @media only screen and (min-width: 800px) {
   /* MAIN CONTAINER CSS */
   .main {
-    margin: 2rem 0;
+    margin: 3rem 0 2rem 0;
   }
 
   /* INTO SECTION CSS */
@@ -155,7 +155,7 @@ section p {
   }
 
   .intro h2 {
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: center;
   }
 
