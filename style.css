@@ -1,0 +1,118 @@
+/* GENERAL CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+  /*primary colors*/
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  /*nuetral colors*/
+  --darl-blue: hsl(234, 12%, 34%);
+  --gray-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+  /*body font-size*/
+  --font-size: 15px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins';
+  font-size: var(--font-size);
+  background-color: var(--light-gray);
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--darl-blue);
+}
+
+p {
+  color: var(--gray-blue);
+  font-size: 0.8em;
+}
+
+.main {
+  margin: 5rem 0;
+}
+
+.container {
+  margin: 0 2em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    'supervisor'
+    'team-builder'
+    'karma'
+    'calculator';
+  gap: 2em;
+}
+
+section {
+  background-color: #fff;
+  padding: 2em 3em 2em 2.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 12px 22px -5px hsla(229, 6%, 66%, 0.5);
+  border-radius: 5px;
+}
+
+section img {
+  align-self: flex-end;
+}
+
+section p {
+  padding: 0.5rem 0 2rem 0;
+}
+
+.intro {
+  padding: 2em;
+  border: none;
+}
+
+.intro h2 {
+  font-size: 6vw;
+  padding: 0 5px;
+}
+
+.intro p {
+  padding: 3em 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.intro h2 span {
+  font-weight: 400;
+  color: var(--gray-blue);
+}
+
+.supervisor {
+  grid-area: supervisor;
+  border-top: 5px solid var(--cyan);
+}
+
+.team-builder {
+  grid-area: team-builder;
+  border-top: 5px solid var(--red);
+}
+
+.karma {
+  grid-area: karma;
+  border-top: 5px solid var(--orange);
+}
+
+.calculator {
+  grid-area: calculator;
+  border-top: 5px solid var(--blue);
+}
